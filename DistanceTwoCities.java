@@ -1,4 +1,4 @@
-class Distance {
+class DistanceTwoCities {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
        int[][] distance = new int[n][n];
         for (int i = 0; i < n; i++) {
@@ -47,7 +47,7 @@ class Distance {
     }
 
     public static void main(String[] args) {
-        Distance sol = new Distance();
+        DistanceTwoCities sol = new DistanceTwoCities();
         int n = 4;
         int[][] edges = { {0, 1, 3}, {1, 2, 1}, {1, 3, 4}, {2, 3, 1} };
         int distanceThreshold = 4;

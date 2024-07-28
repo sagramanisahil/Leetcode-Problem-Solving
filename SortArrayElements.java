@@ -3,7 +3,7 @@
 //Space Complexity: O(1)
 
 import java.util.Arrays;
-class SortArray {
+class SortArrayElements {
     public static int[] sortArray(int[] nums) {
         int temp=0;
         for(int i =0; i < nums.length-1; i++){
@@ -31,7 +31,7 @@ Worst Case: O(n^2)
 
 import java.util.Arrays;
 
-class SortArray {
+class SortArrayElements {
     public static int[] sortArray(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
             int key = nums[i];
@@ -59,7 +59,7 @@ class SortArray {
 
 import java.util.Arrays;
 
-class SortArray {
+class SortArrayElements  {
     public static int[] sortArray(int[] nums) {
         if (nums.length <= 1) {
             return nums;
