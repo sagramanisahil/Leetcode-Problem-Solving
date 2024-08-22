@@ -29,3 +29,26 @@ public class MergeSortedArray {
         System.out.println("Output: " + java.util.Arrays.toString(nums1));
     }
 }
+
+		//Efficient Way to Solve Merge Sorted Array
+class Main {
+    public static void main(String args[]) {
+        int arr[] = {1, 2, 3, 4, 5, 6, 7};
+        int arr1[] = {3, 4, 5, 6, 7, 8, 9};
+        int mergedArray[] = new int[arr.length + arr1.length];
+
+        int i = 0, j = 0;
+
+        for (int k = 0; k < mergedArray.length; k++) {
+            if (i < arr.length && (j >= arr1.length || arr[i] <= arr1[j])) {
+                mergedArray[k] = arr[i++];
+            } else {
+                mergedArray[k] = arr1[j++];
+            }
+        }
+
+        for (int x = 0; x < mergedArray.length; x++) {
+            System.out.print(mergedArray[x] + " ");
+        }
+    }
+}
