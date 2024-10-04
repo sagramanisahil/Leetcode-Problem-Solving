@@ -5,7 +5,6 @@ class RangeSum {
         int[] subarraySums = new int[n * (n + 1) / 2];
         int index = 0;
         
-        // Generate all subarray sums
         for (int i = 0; i < n; i++) {
             int sum = 0;
             for (int j = i; j < n; j++) {
@@ -13,9 +12,8 @@ class RangeSum {
                 subarraySums[index++] = sum;
             }
         }
-        // Sort the subarray sums
+
         Arrays.sort(subarraySums);
-        // Calculate the sum of elements from left to right
         int result = 0;
         for (int i = left - 1; i < right; i++) {
             result = (result + subarraySums[i]) % mod;
